@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}Launch With Code{% endblock title %}
+
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+        <h1>HelloWorld </h1>
+            <form method="POST" action="">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <input type="submit" value="Join" class="btn btn-lg btn-success">
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
+
